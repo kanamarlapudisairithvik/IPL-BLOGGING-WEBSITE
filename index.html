@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPL Franchise Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">🏏 IPL</div>
+    <div>
+      <h1>IPL Franchise Explorer</h1>
+      <p>Click any team to view trophies and players</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="teams-section">
+      <h2>IPL Teams</h2>
+      <div id="teamContainer" class="team-grid"></div>
+    </section>
+
+    <section id="details" class="details hidden">
+      <button id="closeBtn" class="close-btn">✕ Close</button>
+      <div class="team-heading">
+        <div id="teamLogo" class="team-logo">🏏</div>
+        <div>
+          <h2 id="teamName"></h2>
+          <p id="teamFullName"></p>
+        </div>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card trophy-card">
+          <h3>🏆 Trophy Information</h3>
+          <p id="trophyText"></p>
+          <div id="trophyYears" class="trophy-years"></div>
+        </div>
+
+        <div class="info-card">
+          <h3>👥 Player List</h3>
+          <ul id="playerList"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>IPL Franchise Explorer — Basic HTML, CSS & JavaScript Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
